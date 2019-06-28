@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Klijent1">
+   <children>
+      <TableView fx:id="klijentTablica" layoutX="14.0" layoutY="22.0" prefHeight="254.0" prefWidth="609.0">
+        <columns>
+          <TableColumn fx:id="tblImeVlasnika" prefWidth="75.0" text="Ime vlasnika" />
+          <TableColumn fx:id="tblPrezimeVlasnika" prefWidth="109.0" text="Prezime vlasnika" />
+            <TableColumn fx:id="tblAdresaStana" prefWidth="83.0" text="Adresa Stana" />
+            <TableColumn fx:id="tblBrojKvadratak" prefWidth="88.0" text="Broj Kvadrata" />
+            <TableColumn fx:id="tblBrojSobak" prefWidth="70.0" text="Broj soba" />
+            <TableColumn fx:id="tblCijenak" prefWidth="50.0" text="Cijena" />
+            <TableColumn fx:id="tblVrstaStanak" text="Vrsta stana" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnOdaberi" layoutX="47.0" layoutY="295.0" mnemonicParsing="false" onAction="#odaberiStan" prefHeight="25.0" prefWidth="92.0" text="Odaberi stan" />
+      <Button fx:id="btnUgovor" layoutX="47.0" layoutY="334.0" mnemonicParsing="false" onAction="#prikaziUgovor" text="Prikaži ugovor" textFill="#a61212" textOverrun="WORD_ELLIPSIS" />
+   </children>
+</AnchorPane>

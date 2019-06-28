@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="403.0" prefWidth="705.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Vlasnik1">
+   <children>
+      <Label layoutX="40.0" layoutY="136.0" text="Adresa" />
+      <Label layoutX="40.0" layoutY="192.0" text="Broj kvadrata" />
+      <Label layoutX="40.0" layoutY="235.0" text="Broj soba" />
+      <Label layoutX="40.0" layoutY="298.0" text="Cijena" />
+      <TextField fx:id="vAdresa" layoutX="36.0" layoutY="160.0" />
+      <TextField fx:id="vBrojKvadrata" layoutX="36.0" layoutY="209.0" />
+      <TextField fx:id="vBrojSoba" layoutX="36.0" layoutY="263.0" />
+      <TextField fx:id="vCijena" layoutX="36.0" layoutY="315.0" />
+      <Button fx:id="btnDodaj" layoutX="39.0" layoutY="353.0" mnemonicParsing="false" onAction="#dodajStan" text="Dodaj" />
+      <TableView fx:id="vlasnikTablica" layoutX="194.0" layoutY="42.0" prefHeight="286.0" prefWidth="440.0">
+        <columns>
+            <TableColumn fx:id="tblAdresa" prefWidth="75.0" text="Adresa" />
+            <TableColumn fx:id="tblBrojKvadrata" prefWidth="75.0" text="Broj Kvadrata" />
+            <TableColumn fx:id="tblBrojSoba" prefWidth="75.0" text="Broj soba" />
+            <TableColumn fx:id="tblCijena" prefWidth="75.0" text="Cijena" />
+            <TableColumn fx:id="tblVrstaStana" prefWidth="75.0" text="Vrsta stana" />
+            <TableColumn fx:id="tblMjesto" prefWidth="75.0" text="Mjesto" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnUkloni" layoutX="574.0" layoutY="353.0" mnemonicParsing="false" onAction="#ukloniStan" text="Ukloni" />
+      <Button fx:id="btnUredi" layoutX="130.0" layoutY="353.0" mnemonicParsing="false" onAction="#urediStan" text="Uredi" />
+      <Label layoutX="36.0" layoutY="37.0" />
+      <Label layoutX="38.0" layoutY="29.0" text="Mjesto" />
+      <Label layoutX="36.0" layoutY="86.0" text="Vrsta stana" />
+      <TextField fx:id="vMjesto" layoutX="36.0" layoutY="46.0" />
+      <TextField fx:id="vVrstaStana" layoutX="36.0" layoutY="103.0" />
+   </children>
+</AnchorPane>

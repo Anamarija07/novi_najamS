@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="438.0" prefWidth="751.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Admin1">
+   <children>
+      <TabPane layoutX="14.0" layoutY="12.0" prefHeight="402.0" prefWidth="520.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Administracija korisnika">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="korisnikTablica" prefHeight="369.0" prefWidth="519.0">
+                          <columns>
+                            <TableColumn fx:id="korisnikID" minWidth="0.0" prefWidth="27.0" text="ID" />
+                            <TableColumn fx:id="korisnikIme" prefWidth="58.0" text="Ime" />
+                              <TableColumn fx:id="korisnikPrezime" prefWidth="74.0" text="Prezime" />
+                              <TableColumn fx:id="korisnickoIme" prefWidth="84.0" text="Korisnčko ime" />
+                              <TableColumn fx:id="korisnikLozinka" prefWidth="69.0" text="Lozinka" />
+                              <TableColumn fx:id="korisnikUloga" prefWidth="50.0" text="Uloga" />
+                              <TableColumn fx:id="korisnikBroj" minWidth="0.0" prefWidth="91.0" text="BrojTelefona" />
+                              <TableColumn fx:id="korisnikAdresa" minWidth="0.0" prefWidth="65.0" text="Adresa" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <Label layoutX="538.0" layoutY="99.0" text="Prezime" />
+      <Label layoutX="536.0" layoutY="46.0" prefHeight="28.0" prefWidth="28.0" text="Ime" />
+      <Label layoutX="536.0" layoutY="141.0" text="Korisničko ime" />
+      <Label layoutX="541.0" layoutY="269.0" text="Broj telefona" />
+      <Label layoutX="539.0" layoutY="183.0" text="Lozinka" />
+      <Label layoutX="543.0" layoutY="225.0" text="Uloga" />
+      <Label layoutX="541.0" layoutY="311.0" text="Adresa" />
+      <TextField fx:id="kImeTxt" layoutX="538.0" layoutY="74.0" />
+      <TextField fx:id="kPrezimeTxt" layoutX="538.0" layoutY="116.0" />
+      <TextField fx:id="kKimeTxt" layoutX="538.0" layoutY="158.0" />
+      <TextField fx:id="kUlogaTxt" layoutX="538.0" layoutY="244.0" />
+      <TextField fx:id="kBrojTxt" layoutX="538.0" layoutY="286.0" />
+      <TextField fx:id="kAdresaTxt" layoutX="538.0" layoutY="328.0" />
+      <Button fx:id="izbrisiBtn" layoutX="538.0" layoutY="381.0" mnemonicParsing="false" onAction="#pobrisiKorisnika" text="Izbriši" />
+      <Button fx:id="dodajBtn" layoutX="635.0" layoutY="381.0" mnemonicParsing="false" onAction="#dodajKorisnika" text="Dodaj" />
+      <PasswordField fx:id="kLozinkaTxt" layoutX="538.0" layoutY="200.0" />
+   </children>
+</AnchorPane>
