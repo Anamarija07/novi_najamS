@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Ugovor">
+   <children>
+      <Label layoutX="42.0" layoutY="38.0" />
+      <Label layoutX="35.0" layoutY="109.0" text="Ime vlasnika:" />
+      <Label layoutX="327.0" layoutY="175.0" text="Broj kvadrata:" />
+      <Label layoutX="34.0" layoutY="144.0" text="Prezime vlasnika:" />
+      <Label layoutX="36.0" layoutY="201.0" text="Ime klijenta:" />
+      <Label layoutX="36.0" layoutY="225.0" text="Prezime klijenta:" />
+      <Label layoutX="326.0" layoutY="109.0" text="Adresa stana:" />
+      <Label layoutX="325.0" layoutY="133.0" text="Mjesto:" />
+      <Label layoutX="327.0" layoutY="234.0" text="Cijena:" />
+      <Label layoutX="327.0" layoutY="201.0" text="Broj soba:" />
+      <Label layoutX="408.0" layoutY="286.0" text="Opis" />
+      <Label layoutX="42.0" layoutY="331.0" text="Datum:" />
+      <TextField fx:id="vIme" layoutX="142.0" layoutY="105.0" />
+      <TextField fx:id="vPrezime" layoutX="142.0" layoutY="141.0" />
+      <TextField fx:id="kPrezime" layoutX="142.0" layoutY="230.0" />
+      <TextField fx:id="kIme" layoutX="142.0" layoutY="197.0" />
+      <TextField fx:id="cijena" layoutX="421.0" layoutY="239.0" />
+      <TextField fx:id="brSoba" layoutX="422.0" layoutY="206.0" />
+      <TextField fx:id="brKvadrata" layoutX="422.0" layoutY="171.0" />
+      <TextField fx:id="mjesto" layoutX="422.0" layoutY="132.0" />
+      <TextField fx:id="adresa" layoutX="422.0" layoutY="105.0" />
+      <TextArea fx:id="opis" layoutX="408.0" layoutY="305.0" prefHeight="87.0" prefWidth="176.0" />
+      <DatePicker fx:id="datum" layoutX="92.0" layoutY="327.0" />
+      <Text layoutX="142.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ugovor o najmu stana">
+         <font>
+            <Font name="Lucida Bright Regular" size="32.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
